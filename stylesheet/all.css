@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* layout */
+
+
+  
+
+.footer-box{
+  width: 100%;
+  height: 64px;
+  background-color: white;
+}
+
+.header-box{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+.bg-size{
+    background-size: cover;
+}
+
+.bg-position{
+  background-position: center center;
+}
+
+
+.object-fit-cover{
+    object-fit: cover
+}
+
+.top-auto{
+    top: auto;
+}
+
+/* color-token */
+.main-text{
+    color: #005CAF;
+}
+
+.light-text{
+    color: #f06214 ;
+}
+
+.white-text{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* button */
+
+.main-btn{
+    background-color: #005CAF;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-weight: normal ;
+    line-height: 1.25rem;
+    text-align: center;
+    border: none;
+    color: white;
+    -webkit-transition: background-color 0.5s ease-out 50ms;
+}
+
+.main-btn:hover{
+    background-color:#00aaff ;
+}
+
+.outline-btn{
+    background-color: white;
+    border: 1px solid #005CAF;
+    border-radius:2px ;
+    color: #005CAF;
+    -webkit-transition: background-color 0.5s ease-out 50ms;
+}
+
+.outline-btn:hover{
+    background-color: #005CAF;
+    border: 1px solid white;
+    color: white;
+}
+
+.third-btn{
+    background-color:#4EADF1 ;
+    padding: 12px 16px;
+    border: none;
+    color: white;
+    width: 300px;
+    -webkit-transition: background-color 0.5s ease-out 50ms;
+}
+
+.third-btn:hover{
+    background-color: #0794f8;
+}
+
+.card-btn{
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid white;
+    color: #005CAF;
+    font-weight: normal ;
+    line-height: 1.25rem;
+    padding: 12px 16px;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: background-color 0.5s ease-out 50ms;
+  }
+
+.card-btn:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.about-card{
+    background-color: #FFFFFF;
+    border: 1px solid #005CAF;
+    border-top: 10px solid #005CAF;
+}
+
+
+/* tabs */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* justify-content: center;
+    -moz-column-gap: 5px;
+         column-gap: 5px; */
+    margin: 24px 0; 
+    max-width: 1200px;
+    width: 100%;
+  }
+  .tabs input[type=radio] {
+    display: none;
+  }
+  .tabs input[type=radio]:checked + label {
+    color: rgb(255, 255, 255);
+    background-color: #005CAF;
+    /* padding: 12px 16px; */
+    transform: translatey(1px);
+  }
+  .tabs input[type=radio]:checked + label + .tab-content {
+    display: block;
+  }
+  .tabs label {
+    padding: 12px 16px;
+    color: #323232;
+    cursor: pointer;
+    order: 0;
+    -webkit-transition: background-color 0.5s ease-out 50ms;
+  }
+  .tabs label:hover {
+    color: white;
+    background-color: #00539D;
+  }
+  .tabs .tab-content {
+    display: none;
+    line-height: normal;
+    padding: 16px;
+    width: 100%;
+    order: 1;
+  }
+
+/* progress */
+.step{
+    display: flex;
+    justify-content: center;
+    /* float: right; */
+}
+.step li{
+    display: inline-block;
+    width: 12%;
+    text-align:center;
+    right: -10%;
+}
+
+.progress2 li {
+  list-style-type: none;
+  float:left;
+  width: 12%;
+  color: #005CAF;
+  position:relative;
+  text-align:center;
+  right: -8.5%;
+}
+.progress2 li:before {
+    background-image: url(./image/cube-progress.svg);
+    background-repeat: no-repeat;
+    content: "\f111";
+    width: 30px;
+    height: 30px;
+    line-height:30px;
+    display:block;
+    justify-content: center;
+    text-align:center;
+    margin: 0 auto 10px auto;
+}
+.progress2 li:after {
+  content:"";
+  position:absolute;
+  width: 100%;
+  height:1px;
+  background-color: #00235d;
+  top: 12px;
+  left: -50%;
+  z-index:-1;
+}
+.progress2 li:first-child:after {
+  content:none;
+}
+
+.content{
+    background-color: #E8F0FF;
+    width: 100%;
+}
+
+/* line */
+
+.line{
+    width: 3px;
+    height: 48px;
+    background-color: #00539D;
+}
+  
+.bg-blue{
+  background-color: #3B72C3;
+}
+
+.nav-li{
+  padding: 8px 16px;
+}
+
+.nav-a{
+  color: #8d8d8d;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-btn{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.fixed-1{
+  background-color: #005CAF;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+.fixed-2{
+  background-color: #F88720;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+.float-btn{
+  width: fit-content;
+}
+.float-1{
+  padding-top: 8px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.f-btn-1{
+  background-color:#005CAF ;
+  color:white;
+  -webkit-transition: background-color 0.5s ease-out 50ms;
+}
+
+.f-btn-1:hover{
+  background-color: #00aaff;
+}
+
+.f-btn-2{
+  background-color:#F88720  ;
+  color:white;
+  -webkit-transition: background-color 0.5s ease-out 50ms;
+}
+
+.f-btn-2:hover{
+  background-color:#ffaa00;
+  color:white;
+  -webkit-transition: background-color 0.5s ease-out 50ms;
+}
